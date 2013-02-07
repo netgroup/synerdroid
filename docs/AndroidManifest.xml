@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.uniroma2.mcphelloworld"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <service
+            android:name=".QueryManager"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="it.uniroma2.mcphelloworld" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
